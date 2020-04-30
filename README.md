@@ -21,7 +21,7 @@ ver el archivo con las reglas. **El proyecto no compilará si estan reglas se ve
 
 **Swagger**: Para mantener documentada nuestra API se implemento la GUI de Swagger que nos permite ver cada 
 endpoint, la estructura del response así como el JSON que necesita en el body. Esta GUI sirve también como cliente HTTP
-permitiendo probar los endpoints. Se configura por medio de anotaciones en cada Endpoint. Se recomienda ver la 
+permitiendo probar los endpoints esta es la dirección: **http://localhost:8080/swagger-ui/index.html**. Se configura por medio de anotaciones en cada Endpoint. Se recomienda ver la 
 documentación de OpenAPI 3 para aprovechar esta herramienta.
 
 **Integración con JUNIT**
