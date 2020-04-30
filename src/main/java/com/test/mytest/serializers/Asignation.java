@@ -12,15 +12,15 @@ package com.test.mytest.serializers;
  */
 public class Asignation {
 
-    private Event event;
+    private EventSerializer event;
 
     private Location location;
 
-    public Event getEvent() {
+    public EventSerializer getEvent() {
         return event;
     }
 
-    public void setEvent(Event event) {
+    public void setEvent(EventSerializer event) {
         this.event = event;
     }
 

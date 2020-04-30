@@ -10,7 +10,7 @@ package com.test.mytest.serializers;
  *
  * @author augustobatz
  */
-public class Event {
+public class EventSerializer {
 
     private int id;
 

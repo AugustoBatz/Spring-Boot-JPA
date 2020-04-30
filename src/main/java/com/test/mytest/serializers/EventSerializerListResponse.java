@@ -6,6 +6,7 @@
 
 package com.test.mytest.serializers;
 
+import com.test.mytest.model.Event;
 import java.util.List;
 
 /**
@@ -16,7 +17,7 @@ public class EventSerializerListResponse {
 
     private String response;
 
-    private List<EventsLocation> events;
+    private List<Event> events;
 
     public String getResponse() {
         return response;
@@ -26,11 +27,11 @@ public class EventSerializerListResponse {
         this.response = response;
     }
 
-    public List<EventsLocation> getEvents() {
+    public List<Event> getEvents() {
         return events;
     }
 
-    public void setEvents(List<EventsLocation> events) {
+    public void setEvents(List<Event> events) {
         this.events = events;
     }
 }

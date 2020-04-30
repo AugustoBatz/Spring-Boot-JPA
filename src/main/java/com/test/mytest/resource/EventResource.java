@@ -67,7 +67,7 @@ public class EventResource {
 
         });
         eslp.setResponse("ok");
-        eslp.setEvents(eventsLocation);
+        eslp.setEvents(listEvent);
         return eslp;
     }
 
