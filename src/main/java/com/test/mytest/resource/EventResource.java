@@ -11,9 +11,7 @@ import com.test.mytest.repository.EventRespository;
 import com.test.mytest.serializers.EventSerializerListResponse;
 import com.test.mytest.serializers.EventSerializerRequest;
 import com.test.mytest.serializers.EventSerializerResponse;
-import com.test.mytest.serializers.EventsLocation;
 import io.swagger.v3.oas.annotations.Operation;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,14 +56,7 @@ public class EventResource {
             description = "Lista de eventos con localidad")
     public EventSerializerListResponse getEvents() {
         final EventSerializerListResponse eslp = new EventSerializerListResponse();
-        final List<EventsLocation> eventsLocation = new ArrayList<>();
-        List<Event> listEvent = eventrepo.findAll();
-        listEvent.stream().forEach((c) -> {
-            EventsLocation el = new EventsLocation(c);
-            //el.setLocalidades(locationRepo.getLocationsByIDEvent(c.getId()));
-            eventsLocation.add(el);
-
-        });
+        final List<Event> listEvent = eventrepo.findAll();
         eslp.setResponse("ok");
         eslp.setEvents(listEvent);
         return eslp;
