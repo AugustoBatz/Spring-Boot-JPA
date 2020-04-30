@@ -26,11 +26,11 @@ import org.springframework.web.context.WebApplicationContext;
  *
  * @author augustobatz
  */
-/*@RunWith(SpringRunner.class)
+@RunWith(SpringRunner.class)
 @WebAppConfiguration
-@SpringBootTest(webEnvironment=WebEnvironment.MOCK, classes={ MytestApplication.class })*/
+@SpringBootTest(webEnvironment=WebEnvironment.MOCK, classes={ MytestApplication.class })
 public class TestResource {
-    /*private MockMvc mockMvc;
+    private MockMvc mockMvc;
 
     @Autowired
     private WebApplicationContext webApplicationContext;
@@ -40,11 +40,11 @@ public class TestResource {
         this.mockMvc = webAppContextSetup(webApplicationContext).build();
     }
     
-    //@Test
+    @Test
     public void testLoginSuccess() throws Exception {
-        mockMvc.perform(get("/rest/users/all")
+        mockMvc.perform(get("/evento/lista")
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
-    }*/
+    }
 }
