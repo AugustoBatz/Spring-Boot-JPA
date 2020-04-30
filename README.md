@@ -15,7 +15,7 @@ asi como la URI de la DB
 
 ## Plugins
 
-**Checkstyle**: Con el fin de tener un código ordenado y de calidad se implementarion algunas reglas en un archivo
+**Checkstyle**: Con el fin de tener un código ordenado y de calidad se implementaron algunas reglas en un archivo
 _checkstyle.xml_. Esto permite tener buenas prácticas a la hora de escribir código y que se entendible. Se recomienda
 ver el archivo con las reglas. **El proyecto no compilará si estan reglas se ven violadas**
 
